@@ -25,7 +25,6 @@ a {
 }
 
 .sub-logo {
-    /* font-family: 'Delicious Handrawn', cursive; */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -40,6 +39,11 @@ a {
     border-radius: 3px;
     font-family: 'Delicious Handrawn', cursive;
     text-align: center;
+}
+
+.firstly-header>div:last-child:hover {
+    background-color: #fc8d07;
+    box-shadow: 0 0 7px 2px lightgrey;   
 }
 
 .wrapper-nav {
@@ -65,10 +69,9 @@ li {
     font-weight: bold;
 }
 
-/* li {
-    padding: 15px;
-    font-weight: bold;
-} */
+.menu > li:hover{
+    color: rgb(0, 0, 255);
+}
 
 .img-header {
     position: relative;
@@ -91,7 +94,6 @@ li {
 }
 
 h1 {
-
     font-family: 'Shantell Sans', cursive;
     font-style: italic;
     font-size: 54px;
@@ -109,6 +111,7 @@ section{
     border: 2px solid lightgray;
     padding: 10px;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 30px
 }
 
 .card-hotel-left {
@@ -121,38 +124,26 @@ section{
 
 .card-hotel-left img{
     border-radius: 10px;
-    /* opacity: 0.5; */
     width: 100%;
 }
 
  .btn-view-map{
-    margin: 15px;
+    margin: 15px 0;
     padding: 6px 20px 8px 20px;
     border-radius: 4px;
     color: white;
     background-color: rgb(61, 161, 243);
     text-align: center;
-    /* font-family: 'Source Sans Pro', sans-serif; */
 }
-
-/* .card-hotel-left .btn-view-map:hover{
-padding: 6px 20px 8px 20px;
-background-color: #FE9920;
-color: white;
-border-radius: 3px;
-font-family: 'Delicious Handrawn', cursive;
-text-align: center;
-} */
-
 
  .btn-view-map:hover{
     background-color: blue;
+    box-shadow: 0 0 7px 2px lightgrey;  
 }
 
 .card-hotel-center {
     display: flex;
     flex-direction: column;
-    /* align-items: ; */
     width: 39%;
 }
 
@@ -165,14 +156,32 @@ text-align: center;
     color: green;
 }
 
-
 .card-hotel-center li:first-child{
     color: black;
+}
+
+.description-hotel{
+    border-left: 2px solid rgb(218, 216, 216);
+    padding-left: 12px;
 }
 
 .card-hotel-right {
     width: 19%;
 }
+
+.card-hotel-right > p:nth-child(3){
+    font-size: 28px;
+    font-weight:600;
+    margin: 28px 0 0 0;
+}
+
+.btn-view-reserve{
+    width: 136px;
+    margin: 15px 0;
+    padding: 6px 0 8px 0;  
+    text-align: center;
+}
+
 
 
 
