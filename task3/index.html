@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <style>
+        .container {
+            background-color: darkslategray;
+        }
+
+        .contact-container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 25px;
+            color: white;
+        }
+        .card-contact{
+            display: flex;            
+        }
+        .card-contact > div{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Завдання 3
+    Створіть сторінку з розміткою, на якій відображатиметься контактна інформація Вашого навчального закладу або Вашої робочої організації. 
+    Використовуючи мікродані та словник термінів http://schema.org/Person додайте їх до розмітки. Перевірте розмітку на правильність оформлення. -->
+
+    <div class="container">
+        <section class="contact-container" itemscope itemtype="https://schema.org/Organization">
+            <h1 itemprop="legalName">Південне міжрегіональне управління Міністерства юстиції (м. Одеса)</h1>
+            <p itemprop="address">м. Дніпро, пр. Дмитра Яворницького, 21-а, 49027</p>
+            <div class="card-contact">
+                <div>
+                    <p itemprop="email">info@dp.minjust.gov.ua</p>
+                    <p>Час роботи:</p>
+                    <p>ПН-ЧТ: з 08:00 до 17:00</p>
+                    <p>ПТ: з 08:00 до 15:45</p>
+                    <p>Обідня перерва: з 12:00 до 12:45</p>
+                </div>
+                <div>
+                    <p>«Гарячі» телефонні лінії:</p>
+                    <p itemprop="telephone">(048) 705-18-21 - Одеська область</p>
+                    <p itemprop="telephone">(0512) 47-62-37 - Миколаївська область</p>
+                    <p itemprop="telephone">(098) 98-16-512 - Херсонська область</p>
+                    <p itemprop="telephone">(056) 23-98-592 - Дніпропетровська область</p>
+                    <p itemprop="telephone">(067) 68-48-993 - Запорізька область</p>
+                    <p itemprop="telephone">(052) 23-56-650 - Кіровоградська область</p>
+                    <p> ______________________________________</p>
+                    <p itemprop="faxNumber">(056) 746-08-91 - тел. приймальні</p>
+                    <p itemprop="faxNumber">(056) 746-08-91 - тел./факс</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485.7860745509035!2d30.721702371673036!3d46.46809162006885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c632281768afc7%3A0x6fc8df53fcc90377!2z0JPQu9Cw0LLQvdC-0LUg0YLQtdGA0YDQuNGC0L7RgNC40LDQu9GM0L3QvtC1INGD0L_RgNCw0LLQu9C10L3QuNC1INGO0YHRgtC40YbQuNC4INCyINCe0LTQtdGB0YHQutC-0Lkg0L7QsdC70LDRgdGC0Lg!5e0!3m2!1sru!2sua!4v1680786963733!5m2!1sru!2sua" width="350" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
